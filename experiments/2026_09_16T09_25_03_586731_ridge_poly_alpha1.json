@@ -1,0 +1,52 @@
+{
+  "experiment_name": "ridge_poly_alpha1",
+  "timestamp": "2026-09-16T09:25:03.586731",
+  "random_state": 42,
+  "params": {
+    "model_type": "Ridge+PolynomialFeatures",
+    "preprocess": "StandardScaler + passthrough + OneHotEncoder",
+    "target": "log1p(trip_duration)",
+    "feature_selection": "none (all features)",
+    "n_features": 23,
+    "poly_degree": 2,
+    "alpha": 1.0
+  },
+  "metrics": {
+    "rmsle_train": 0.45346850885913403,
+    "rmsle_valid": 0.4541753047438609,
+    "rmsle_holdout": 0.45827125223351406
+  },
+  "features": [
+    "haversine_distance",
+    "direction",
+    "total_distance",
+    "total_travel_time",
+    "number_of_steps",
+    "temperature",
+    "visibility",
+    "wind speed",
+    "precip",
+    "passenger_count",
+    "hour_sin",
+    "hour_cos",
+    "dow_sin",
+    "dow_cos",
+    "is_weekend",
+    "is_rush_hour",
+    "is_holiday",
+    "vendor_id",
+    "store_and_fwd_flag",
+    "events",
+    "geo_cluster",
+    "pickup_hour",
+    "pickup_day_of_week"
+  ],
+  "baseline_rmsle": 0.5164,
+  "artifact_path": null,
+  "versions": {
+    "numpy": "1.24.2",
+    "pandas": "2.0.1",
+    "sklearn": "1.2.2"
+  },
+  "warning_needed": false
+}

@@ -1,0 +1,30 @@
+{
+  "experiment_name": "target_distribution",
+  "timestamp": "2026-09-16T09:07:00.141773",
+  "random_state": 42,
+  "params": {
+    "type": "EDA",
+    "target": "trip_duration_log",
+    "transform": "log1p"
+  },
+  "metrics": {
+    "mean": 6.466978409297406,
+    "median": 6.4967749901858625,
+    "std": 0.7957595093149208,
+    "skew": -0.290160923725991,
+    "total_rows": 1458644
+  },
+  "features": [
+    "pickup_longitude",
+    "pickup_latitude",
+    "geo_cluster"
+  ],
+  "baseline_rmsle": null,
+  "artifact_path": "c:\\Users\\PC\\IDE\\sf_data_science\\Projects\\Project-5_Clean\\experiments\\2026_09_16_09_06_59_target_distribution.png",
+  "versions": {
+    "numpy": "1.24.2",
+    "pandas": "2.0.1",
+    "sklearn": "1.2.2"
+  },
+  "warning_needed": false
+}

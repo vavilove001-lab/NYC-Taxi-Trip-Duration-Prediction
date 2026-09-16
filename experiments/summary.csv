@@ -1,0 +1,15 @@
+experiment_name,timestamp,model_type,rmsle_train,rmsle_valid,rmsle_holdout,leaderboard_public,leaderboard_private,baseline_rmsle,num_features,warning_needed,artifact_path
+clusters,2026-09-16T09:04:29.141409,unknown,,,,,,,3,False,c:\Users\PC\IDE\sf_data_science\Projects\Project-5_Clean\experiments\2026_09_16_09_04_28_clusters.png
+target_distribution,2026-09-16T09:07:00.141773,unknown,,,,,,,3,False,c:\Users\PC\IDE\sf_data_science\Projects\Project-5_Clean\experiments\2026_09_16_09_06_59_target_distribution.png
+hourly_trips,2026-09-16T09:08:08.997461,unknown,,,,,,,2,False,c:\Users\PC\IDE\sf_data_science\Projects\Project-5_Clean\experiments\2026_09_16_09_08_08_hourly_trips.png
+day_of_week_trips,2026-09-16T09:10:42.088920,unknown,,,,,,,2,False,c:\Users\PC\IDE\sf_data_science\Projects\Project-5_Clean\experiments\2026_09_16_09_10_41_day_of_week_trips.png
+heatmap_hour_dow,2026-09-16T09:13:08.515197,unknown,,,,,,,3,False,c:\Users\PC\IDE\sf_data_science\Projects\Project-5_Clean\experiments\2026_09_16_09_13_08_heatmap_hour_dow.png
+pickup_dropoff_scatter,2026-09-16T09:18:04.043508,unknown,,,,,,,5,False,c:\Users\PC\IDE\sf_data_science\Projects\Project-5_Clean\experiments\2026_09_16_09_16_53_pickup_dropoff_scatter.png
+baseline_linear_regression,2026-09-16T09:21:10.791758,baseline,,0.5163998119380274,0.518171000915836,,,,23,False,
+ridge_poly_alpha1,2026-09-16T09:25:03.586731,Ridge+PolynomialFeatures,0.453468508859134,0.4541753047438609,0.458271252233514,,,0.5164,23,False,
+decision_tree_depth_search,2026-09-16T09:29:19.376471,DecisionTreeRegressor,0.4154381139651737,0.432498423374512,0.4337293489350301,,,0.5164,23,False,c:\Users\PC\IDE\sf_data_science\Projects\Project-5_Clean\experiments\decision_tree_depth_curve.png
+random_forest_all_features,2026-09-16T09:34:07.280048,RandomForestRegressor,0.3960514960214503,0.4162246411334157,0.4183969729355427,,,0.5164,23,False,
+gradient_boosting_baseline,2026-09-16T09:51:18.613687,GradientBoostingRegressor,0.385839746654654,0.407706488263042,0.409002517265048,,,0.5164,23,False,
+hist_gradient_boosting,2026-09-16T09:52:01.891139,HistGradientBoostingRegressor,0.3982091116097725,0.4046327213869088,0.4060398119870341,,,0.5164,23,False,
+voting_ridge_rf_hgbm,2026-09-16T09:59:39.380463,VotingRegressor,0.4027044471346534,0.4119744694601654,0.4141917564059991,,,0.5164,23,False,
+final_submission_hist_gbm,2026-09-16T10:31:01.964649,HistGradientBoostingRegressor,,,,0.41257,0.40902,0.5164,23,False,

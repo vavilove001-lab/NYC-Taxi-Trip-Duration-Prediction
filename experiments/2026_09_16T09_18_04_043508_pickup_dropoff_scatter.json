@@ -1,0 +1,45 @@
+{
+  "experiment_name": "pickup_dropoff_scatter",
+  "timestamp": "2026-09-16T09:18:04.043508",
+  "random_state": 42,
+  "params": {
+    "type": "EDA",
+    "features": "pickup + dropoff coordinates",
+    "color_by": "geo_cluster",
+    "n_clusters": 10
+  },
+  "metrics": {
+    "pickup_long_range": [
+      -121.93334197998048,
+      -61.33552932739258
+    ],
+    "pickup_lat_range": [
+      34.35969543457031,
+      51.88108444213867
+    ],
+    "dropoff_long_range": [
+      -121.9333038330078,
+      -61.33552932739258
+    ],
+    "dropoff_lat_range": [
+      32.1811408996582,
+      43.92102813720703
+    ],
+    "total_rows": 1458644
+  },
+  "features": [
+    "pickup_longitude",
+    "pickup_latitude",
+    "dropoff_longitude",
+    "dropoff_latitude",
+    "geo_cluster"
+  ],
+  "baseline_rmsle": null,
+  "artifact_path": "c:\\Users\\PC\\IDE\\sf_data_science\\Projects\\Project-5_Clean\\experiments\\2026_09_16_09_16_53_pickup_dropoff_scatter.png",
+  "versions": {
+    "numpy": "1.24.2",
+    "pandas": "2.0.1",
+    "sklearn": "1.2.2"
+  },
+  "warning_needed": false
+}

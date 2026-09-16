@@ -1,0 +1,29 @@
+{
+  "experiment_name": "hourly_trips",
+  "timestamp": "2026-09-16T09:08:08.997461",
+  "random_state": 42,
+  "params": {
+    "type": "EDA",
+    "feature": "pickup_hour",
+    "agg": "count + median"
+  },
+  "metrics": {
+    "peak_hour_count": 18,
+    "peak_hour_trips": 90600,
+    "peak_hour_median_duration": 14,
+    "max_median_duration_sec": 726.0,
+    "total_rows": 1458598
+  },
+  "features": [
+    "pickup_hour",
+    "trip_duration"
+  ],
+  "baseline_rmsle": null,
+  "artifact_path": "c:\\Users\\PC\\IDE\\sf_data_science\\Projects\\Project-5_Clean\\experiments\\2026_09_16_09_08_08_hourly_trips.png",
+  "versions": {
+    "numpy": "1.24.2",
+    "pandas": "2.0.1",
+    "sklearn": "1.2.2"
+  },
+  "warning_needed": false
+}

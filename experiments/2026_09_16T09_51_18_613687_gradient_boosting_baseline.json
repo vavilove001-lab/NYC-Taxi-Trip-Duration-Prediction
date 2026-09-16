@@ -1,0 +1,55 @@
+{
+  "experiment_name": "gradient_boosting_baseline",
+  "timestamp": "2026-09-16T09:51:18.613687",
+  "random_state": 42,
+  "params": {
+    "model_type": "GradientBoostingRegressor",
+    "preprocess": "StandardScaler + passthrough + OneHotEncoder",
+    "target": "log1p(trip_duration)",
+    "feature_selection": "none (all features)",
+    "n_features": 23,
+    "learning_rate": 0.5,
+    "n_estimators": 100,
+    "max_depth": 6,
+    "min_samples_split": 30,
+    "random_state": 42
+  },
+  "metrics": {
+    "rmsle_train": 0.38583974665465404,
+    "rmsle_valid": 0.407706488263042,
+    "rmsle_holdout": 0.40900251726504805
+  },
+  "features": [
+    "haversine_distance",
+    "direction",
+    "total_distance",
+    "total_travel_time",
+    "number_of_steps",
+    "temperature",
+    "visibility",
+    "wind speed",
+    "precip",
+    "passenger_count",
+    "hour_sin",
+    "hour_cos",
+    "dow_sin",
+    "dow_cos",
+    "is_weekend",
+    "is_rush_hour",
+    "is_holiday",
+    "vendor_id",
+    "store_and_fwd_flag",
+    "events",
+    "geo_cluster",
+    "pickup_hour",
+    "pickup_day_of_week"
+  ],
+  "baseline_rmsle": 0.5164,
+  "artifact_path": null,
+  "versions": {
+    "numpy": "1.24.2",
+    "pandas": "2.0.1",
+    "sklearn": "1.2.2"
+  },
+  "warning_needed": false
+}

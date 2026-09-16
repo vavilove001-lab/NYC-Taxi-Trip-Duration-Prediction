@@ -1,0 +1,52 @@
+{
+  "experiment_name": "decision_tree_depth_search",
+  "timestamp": "2026-09-16T09:29:19.376471",
+  "random_state": 42,
+  "params": {
+    "model_type": "DecisionTreeRegressor",
+    "preprocess": "StandardScaler + passthrough + OneHotEncoder",
+    "target": "log1p(trip_duration)",
+    "feature_selection": "none (all features)",
+    "n_features": 23,
+    "max_depth": 11,
+    "random_state": 42
+  },
+  "metrics": {
+    "rmsle_train": 0.4154381139651737,
+    "rmsle_valid": 0.43249842337451205,
+    "rmsle_holdout": 0.4337293489350301
+  },
+  "features": [
+    "haversine_distance",
+    "direction",
+    "total_distance",
+    "total_travel_time",
+    "number_of_steps",
+    "temperature",
+    "visibility",
+    "wind speed",
+    "precip",
+    "passenger_count",
+    "hour_sin",
+    "hour_cos",
+    "dow_sin",
+    "dow_cos",
+    "is_weekend",
+    "is_rush_hour",
+    "is_holiday",
+    "vendor_id",
+    "store_and_fwd_flag",
+    "events",
+    "geo_cluster",
+    "pickup_hour",
+    "pickup_day_of_week"
+  ],
+  "baseline_rmsle": 0.5164,
+  "artifact_path": "c:\\Users\\PC\\IDE\\sf_data_science\\Projects\\Project-5_Clean\\experiments\\decision_tree_depth_curve.png",
+  "versions": {
+    "numpy": "1.24.2",
+    "pandas": "2.0.1",
+    "sklearn": "1.2.2"
+  },
+  "warning_needed": false
+}

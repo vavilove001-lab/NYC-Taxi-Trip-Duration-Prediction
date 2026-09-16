@@ -1,0 +1,29 @@
+{
+  "experiment_name": "day_of_week_trips",
+  "timestamp": "2026-09-16T09:10:42.088920",
+  "random_state": 42,
+  "params": {
+    "type": "EDA",
+    "feature": "pickup_day_of_week",
+    "agg": "count + median"
+  },
+  "metrics": {
+    "peak_day_count": 4,
+    "peak_day_trips": 223533,
+    "peak_day_median_duration": 3,
+    "max_median_duration_sec": 709.0,
+    "total_rows": 1458598
+  },
+  "features": [
+    "pickup_day_of_week",
+    "trip_duration"
+  ],
+  "baseline_rmsle": null,
+  "artifact_path": "c:\\Users\\PC\\IDE\\sf_data_science\\Projects\\Project-5_Clean\\experiments\\2026_09_16_09_10_41_day_of_week_trips.png",
+  "versions": {
+    "numpy": "1.24.2",
+    "pandas": "2.0.1",
+    "sklearn": "1.2.2"
+  },
+  "warning_needed": false
+}

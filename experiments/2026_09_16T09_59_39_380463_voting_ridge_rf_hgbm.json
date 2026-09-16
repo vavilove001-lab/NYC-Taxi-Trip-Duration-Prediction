@@ -1,0 +1,52 @@
+{
+  "experiment_name": "voting_ridge_rf_hgbm",
+  "timestamp": "2026-09-16T09:59:39.380463",
+  "random_state": 42,
+  "params": {
+    "model_type": "VotingRegressor",
+    "estimators": "Ridge+Poly2, RandomForest, HistGBM",
+    "voting": "uniform (equal weights)",
+    "target": "log1p(trip_duration)",
+    "feature_selection": "none (all features)",
+    "n_features": 23,
+    "random_state": 42
+  },
+  "metrics": {
+    "rmsle_train": 0.4027044471346534,
+    "rmsle_valid": 0.41197446946016547,
+    "rmsle_holdout": 0.4141917564059991
+  },
+  "features": [
+    "haversine_distance",
+    "direction",
+    "total_distance",
+    "total_travel_time",
+    "number_of_steps",
+    "temperature",
+    "visibility",
+    "wind speed",
+    "precip",
+    "passenger_count",
+    "hour_sin",
+    "hour_cos",
+    "dow_sin",
+    "dow_cos",
+    "is_weekend",
+    "is_rush_hour",
+    "is_holiday",
+    "vendor_id",
+    "store_and_fwd_flag",
+    "events",
+    "geo_cluster",
+    "pickup_hour",
+    "pickup_day_of_week"
+  ],
+  "baseline_rmsle": 0.5164,
+  "artifact_path": null,
+  "versions": {
+    "numpy": "1.24.2",
+    "pandas": "2.0.1",
+    "sklearn": "1.2.2"
+  },
+  "warning_needed": false
+}

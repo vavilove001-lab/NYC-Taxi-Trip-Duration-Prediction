@@ -1,0 +1,40 @@
+{
+  "experiment_name": "clusters",
+  "timestamp": "2026-09-16T09:04:29.141409",
+  "random_state": 42,
+  "params": {
+    "type": "EDA",
+    "method": "kmeans",
+    "n_clusters": 10,
+    "sample_size": 10000
+  },
+  "metrics": {
+    "n_clusters": 10,
+    "cluster_distribution": {
+      "6": 414914,
+      "1": 399347,
+      "7": 282999,
+      "3": 268075,
+      "0": 41532,
+      "4": 32848,
+      "8": 18905,
+      "9": 18,
+      "5": 4,
+      "2": 2
+    },
+    "total_rows": 1458644
+  },
+  "features": [
+    "pickup_longitude",
+    "pickup_latitude",
+    "geo_cluster"
+  ],
+  "baseline_rmsle": null,
+  "artifact_path": "c:\\Users\\PC\\IDE\\sf_data_science\\Projects\\Project-5_Clean\\experiments\\2026_09_16_09_04_28_clusters.png",
+  "versions": {
+    "numpy": "1.24.2",
+    "pandas": "2.0.1",
+    "sklearn": "1.2.2"
+  },
+  "warning_needed": false
+}

@@ -1,0 +1,59 @@
+{
+  "experiment_name": "final_submission_hist_gbm",
+  "timestamp": "2026-09-16T10:31:01.964649",
+  "random_state": 42,
+  "params": {
+    "model_type": "HistGradientBoostingRegressor",
+    "preprocess": "StandardScaler + passthrough + OrdinalEncoder",
+    "target": "log1p(trip_duration)",
+    "n_features": 23,
+    "max_iter": 500,
+    "learning_rate": 0.05,
+    "min_samples_leaf": 30,
+    "l2_regularization": 1.0,
+    "early_stopping": true,
+    "n_iter_no_change": 30,
+    "random_state": 42,
+    "trained_on": "full_dataset",
+    "leaderboard_private": 0.4099
+  },
+  "metrics": {
+    "best_valid_rmsle": 0.4046,
+    "best_holdout_rmsle": 0.406,
+    "leaderboard_public": 0.41257,
+    "leaderboard_private": 0.40902
+  },
+  "features": [
+    "haversine_distance",
+    "direction",
+    "total_distance",
+    "total_travel_time",
+    "number_of_steps",
+    "temperature",
+    "visibility",
+    "wind speed",
+    "precip",
+    "passenger_count",
+    "hour_sin",
+    "hour_cos",
+    "dow_sin",
+    "dow_cos",
+    "is_weekend",
+    "is_rush_hour",
+    "is_holiday",
+    "vendor_id",
+    "store_and_fwd_flag",
+    "events",
+    "geo_cluster",
+    "pickup_hour",
+    "pickup_day_of_week"
+  ],
+  "baseline_rmsle": 0.5164,
+  "artifact_path": null,
+  "versions": {
+    "numpy": "1.24.2",
+    "pandas": "2.0.1",
+    "sklearn": "1.2.2"
+  },
+  "warning_needed": false
+}

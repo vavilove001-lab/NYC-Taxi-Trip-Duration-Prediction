@@ -1,0 +1,53 @@
+{
+  "experiment_name": "baseline_linear_regression",
+  "timestamp": "2026-09-16T09:21:10.791758",
+  "random_state": 42,
+  "params": {
+    "model_type": "baseline",
+    "model": "LinearRegression",
+    "preprocess": "StandardScaler + passthrough + OneHotEncoder",
+    "target": "log1p(trip_duration)",
+    "feature_selection": "none (all features)",
+    "n_features": 23
+  },
+  "metrics": {
+    "rmsle_valid": 0.5163998119380274,
+    "rmsle_holdout": 0.518171000915836,
+    "train_rows": 875186,
+    "valid_rows": 291729,
+    "holdout_rows": 291729
+  },
+  "features": [
+    "haversine_distance",
+    "direction",
+    "total_distance",
+    "total_travel_time",
+    "number_of_steps",
+    "temperature",
+    "visibility",
+    "wind speed",
+    "precip",
+    "passenger_count",
+    "hour_sin",
+    "hour_cos",
+    "dow_sin",
+    "dow_cos",
+    "is_weekend",
+    "is_rush_hour",
+    "is_holiday",
+    "vendor_id",
+    "store_and_fwd_flag",
+    "events",
+    "geo_cluster",
+    "pickup_hour",
+    "pickup_day_of_week"
+  ],
+  "baseline_rmsle": null,
+  "artifact_path": null,
+  "versions": {
+    "numpy": "1.24.2",
+    "pandas": "2.0.1",
+    "sklearn": "1.2.2"
+  },
+  "warning_needed": false
+}

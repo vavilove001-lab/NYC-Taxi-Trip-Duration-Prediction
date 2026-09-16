@@ -1,0 +1,29 @@
+{
+  "experiment_name": "heatmap_hour_dow",
+  "timestamp": "2026-09-16T09:13:08.515197",
+  "random_state": 42,
+  "params": {
+    "type": "EDA",
+    "features": "pickup_hour + pickup_day_of_week",
+    "agg": "median"
+  },
+  "metrics": {
+    "max_median_duration_sec": 811.0,
+    "min_median_duration_sec": 448.0,
+    "total_cells": 168,
+    "total_rows": 1458598
+  },
+  "features": [
+    "pickup_hour",
+    "pickup_day_of_week",
+    "trip_duration"
+  ],
+  "baseline_rmsle": null,
+  "artifact_path": "c:\\Users\\PC\\IDE\\sf_data_science\\Projects\\Project-5_Clean\\experiments\\2026_09_16_09_13_08_heatmap_hour_dow.png",
+  "versions": {
+    "numpy": "1.24.2",
+    "pandas": "2.0.1",
+    "sklearn": "1.2.2"
+  },
+  "warning_needed": false
+}

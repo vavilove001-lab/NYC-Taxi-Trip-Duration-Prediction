@@ -1,0 +1,20 @@
+data/*.csv
+data/*.parquet
+!data/.gitkeep
+!data/README.md
+# Models (если появятся)
+*.pkl
+*.joblib
+models/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+.env
+
+# OS
+.DS_Store
+Thumbs.db
