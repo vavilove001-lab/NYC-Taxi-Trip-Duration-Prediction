@@ -38,9 +38,38 @@
 - логика вынесена в `src/`, 
 - данные изолированы в `data/`, 
 - результаты экспериментов хранятся в `experiments/`.
-
-Project-5_Clean/ ├── .gitignore # Правила игнорирования файлов для Git ├── requirements.txt # Список зависимостей Python ├── README.md # Эта документация ├── data/ # Исходные и предобработанные данные │ ├── .gitkeep # Маркер непустой папки для Git │ ├── train.csv # Обучающая выборка (с таргетом trip_duration) │ ├── Project5_test_data.csv# Тестовая выборка (без таргета) │ ├── holiday_data.csv # Календарь праздников и выходных │ ├── weather_data.csv # Исторические данные о погоде │ ├── osrm_data_train.csv # Маршруты и расстояния (OSRM) для train │ ├── Project5_osrm_data_test.csv # Маршруты и расстояния (OSRM) для test │ └── README.md # Описание файлов данных и источников ├── experiments/ # Результаты экспериментов │ ├── summary.csv # Лог всех запусков (модель, параметры, RMSE) │ ├── plots/ # Папка для графиков (опционально) │ │ ├── learning_curve.png │ │ └── feature_importance.png │ └── submission_v1.csv # Финальный сабмишн для соревнования ├── notebooks/ # Jupyter Notebook с основным пайплайном │ └── trip_duration_prediction.ipynb ├── src/ # Модули проекта (вынесенная логика) │ ├── init.py # Инициализация пакета src │ ├── data_utils.py # Функции загрузки, валидации и базовой очистки данных │ ├── features.py # Генерация признаков (погода, праздники, OSRM, гео-фичи) │ └── experiment_logger.py # Логирование результатов в summary.csv └── .pycache/ # Кэш скомпилированных Python-модулей (игнорируется Git)
-
+```
+Project-5_Clean/ 
+|
+├── README.md                           # Документация к проекту (Этот файл)                                                                
+├── .gitignore                          # Игнорируемые файлы 
+├── requirements.txt                    # Список зависимостей Python 
+├── data/                               # Исходные и предобработанные данные 
+|   ├── README.md                       # Описание файлов данных и источников
+|   ├── .gitkeep                        # Маркер непустой папки для Git  
+|   ├── train.csv                       # Обучающая выборка (с таргетом trip_duration) 
+|   ├── Project5_test_data.csv          # Тестовая выборка (без таргета) 
+|   ├── holiday_data.csv                # Календарь праздников и выходных 
+|   ├── weather_data.csv                # Исторические данные о погоде 
+|   ├── osrm_data_train.csv             # Маршруты и расстояния (OSRM) для train  
+|   └── Project5_osrm_data_test.csv     # Маршруты и расстояния (OSRM) для test  
+|     
+├── experiments/                        # Результаты экспериментов  
+|   ├── plots.png                       # Файлы графиков экспериментов и EDA
+|   ├── experiments.json                # Файлы экспериментов .json
+|   ├── summary.csv                     # Лог всех запусков (модель, параметры, RMSE)  
+|   └── submission.csv                  # Финальный сабмишн для соревнования 
+|
+├── notebooks/                          # Jupyter Notebook с основным пайплайном 
+│   └── trip_duration_prediction.ipynb 
+|
+└── src/                                # Модули проекта (вынесенная логика) │ 
+    ├── init.py                         # Инициализация пакета src │ 
+    ├── data_utils.py                   # Функции загрузки, валидации и базовой очистки данных │ 
+    ├── features.py                     # Генерация признаков (погода, праздники, OSRM, гео-фичи) │ 
+    └── experiment_logger.py            # Логирование результатов в summary.csv 
+    └── .pycache/                       # Кэш скомпилированных Python-модулей (игнорируется Git)
+```
 ### Назначение ключевых модулей
 
 - **`src/data_utils.py`**: Отвечает за загрузку CSV-файлов из папки `data/`. 
