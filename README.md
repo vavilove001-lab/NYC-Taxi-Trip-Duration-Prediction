@@ -106,14 +106,14 @@ $$RMSLE = \sqrt{\frac{1}{n}\sum_{i=1}^n(log(y_i+1)-log(\hat{y_i}+1))^2},$$
 ## Установка проекта
 
 ```
-git clone https://github.com/SkillfactoryDS/DataCleaningProject
+git clone https://github.com/vavilove001-lab/NYC-Taxi-Trip-Duration-Prediction
 ```
 
 ## Использование
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/yourname/trip-duration-prediction.git
+   git clone https://github.com/vavilove001-lab/NYC-Taxi-Trip-Duration-Prediction
    cd trip-duration-prediction
 2. Install dependencies:
     ```bash
